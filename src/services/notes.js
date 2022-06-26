@@ -15,3 +15,13 @@ export const GetNotes = async (dispatch) => {
         console.log('Error!');
     }
 }
+
+export const DeleteNotes = async (dispatch, note) => {
+    try {
+        // api call
+
+        dispatch(ActionCreators.deleteNote(note));
+    } catch {
+        console.log('Error!');
+    }
+}
